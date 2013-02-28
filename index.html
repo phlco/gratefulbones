@@ -1,68 +1,57 @@
 <!DOCTYPE html>
-
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8" />
-
-  <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
-
   <title>Grateful Bones Records</title>
-
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="vendor/foundation/stylesheets/foundation.css">
-  -->
-  <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="vendor/foundation/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="vendor/foundation/stylesheets/app.css">
   <link type="text/css" href="assets/css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="vendor/foundation/javascripts/modernizr.foundation.js"></script>
-  <script src="assets/js/fittext.js"></script>
-  <script src="assets/js/javascript.js"></script>
 </head>
-<body>
-
-  <div id='mask' class='close_modal'></div>
-  <div id='first_window' class='modal_window'>
-    CALL NOW!<br/>
-  </div>
+<body itemscope itemtype="http://schema.org/Organization">
+  <div class="row">
     <div clas="twelve columns">
+      <div id="mask" class="close_modal"></div>
+      <div id="first_window" class="modal_window">
+        CALL NOW!<br/>
+        <span itemprop="telephone" id="grateful_bones_hotline">1 (562)-44-JERRY</span>
+      </div>
       <h3>
-        <a class='activate_modal' name='first_window' href='#' id="grateful_bones_logo"><img src="assets/img/logo_grateful_bones.png" alt="Grateful Bones Records"/></a>
+        <a class="activate_modal" name="first_window" href="#" id="grateful_bones_logo">
+          <img src="assets/img/logo_grateful_bones.png" itemprop="logo" alt="Grateful Bones Records"/>
+        </a>
       </h3>
     </div>
   </div>
+
   <div class="row">
     <div class="six columns centered">
       <p>
         <br><br>
           If interested in
-          <span itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
-            <span itemprop="inAlbum">GRB-001</span>
+          <span itemprop="owns" itemscope itemtype="http://schema.org/MusicRecording">
+            <span itemprop="name">GRB-001</span>
           </span>, mail a mix tape to:
         <br><br>
-        <span itemscope itemtype="http://schema.org/Organization">
           <span itemprop="name">Grateful Bones</span><br>
           c/o <span itemprop="contactPoint">Hillary Byrum</span><br>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <span itemprop="streetAddress">67 West Street, Unit #221</span><br>
             <span itemprop="addressLocality">Brooklyn, NY</span><br>
             <span itemprop="postalCode">11222</span>
-            <span itemprop="telephone" id="grateful_bones_hotline">1 (562)-44-JERRY</span>
           </span>
-        </span>
       </p>
     </div>
   </div>
 
-  <!-- Included JS Files (Compressed)
-  <script src="vendor/foundation/javascripts/foundation.min.js"></script>
-
-  <!-- Initialize JS Plugins -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="assets/js/fittext.js"></script>
+  <script src="assets/js/javascript.js"></script>
   <script src="vendor/foundation/javascripts/app.js"></script>
 </body>
 </html>

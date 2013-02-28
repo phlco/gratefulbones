@@ -2,7 +2,9 @@ $(function(){
     //get the height and width of the page
     var window_width = $(window).width();
     var window_height = $(window).height();
-    $('#first_window').fitText()
+    var phoneNumber = $('#grateful_bones_hotline');
+    $('#first_window').append(phoneNumber);
+    $('#first_window').fitText();
 
 //vertical and horizontal centering of modal window(s)
 /*we will use each function so if we have more then 1
